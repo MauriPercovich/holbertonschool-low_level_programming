@@ -6,9 +6,15 @@
 **/
 int main(void)
 {
-Console.WriteLine("sizeof(int): {0}", sizeof(int));
-            Console.WriteLine("sizeof(float): {0}", sizeof(float));
-	                Console.WriteLine("sizeof(char): {0}", sizeof(char));
-			            Console.WriteLine("sizeof(double): {0}", sizeof(double));
-				                Console.WriteLine("sizeof(bool): {0}", sizeof(bool));
+int intType;
+float floatType;
+double doubleType;
+char charType;
+
+printf("Size of int: %zu bytes\n", sizeof(intType));
+printf("Size of float: %zu bytes\n", sizeof(floatType));
+printf("Size of double: %zu bytes\n", sizeof(doubleType));
+printf("Size of char: %zu byte\n", sizeof(charType));
+
+return 0;
 }
