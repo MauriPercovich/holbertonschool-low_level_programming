@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- *This is a comment
- * Return Always 0 (Succes)
+ * main - print
+ * This is a comment
+ * return - Always 0 (Succes)
 **/
 int main(void)
 {
