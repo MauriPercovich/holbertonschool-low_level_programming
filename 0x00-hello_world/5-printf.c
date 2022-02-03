@@ -10,6 +10,6 @@ int printf(const char "with proper grammar, but the outcome is a piece of art,")
 	return (0);
 }
 {
-int gcc(-wall);
+int gcc(-Wall);
 	return (0);
 
