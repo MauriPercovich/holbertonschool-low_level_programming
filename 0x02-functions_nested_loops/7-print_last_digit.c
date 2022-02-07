@@ -13,7 +13,7 @@ if (i < 0)
 
 x = x * -1;
 
-_putchar(x);
+_putchar(x + '0');
 
 return (x);
 }
