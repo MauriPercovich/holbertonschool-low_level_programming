@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - print
- *
+ * @c: variable
  * Return: always 0
 **/
 
