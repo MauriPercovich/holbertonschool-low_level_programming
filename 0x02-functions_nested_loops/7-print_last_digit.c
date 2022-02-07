@@ -1,15 +1,15 @@
 #include "main.h"
 /**
  * print_last_digit - print last digit
- *@i: variable
+ *@y: variable
  *Return: always 0
 **/
 
-int print_last_digit(int i)
+int print_last_digit(int y)
 {
-int x = i % 10;
+int x = y % 10;
 
-if (i < 0)
+if (y < 0)
 
 x = x * -1;
 
