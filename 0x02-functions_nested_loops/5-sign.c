@@ -1,34 +1,29 @@
 #include "main.h"
 /**
- * print_sign - check sign of number
- *@n: int
- * Return: always 0
+* print_sign - sign
+*
+* @n: number
+*
+* Return: Always 0 (Sucess)
 **/
+int print_sign(int n)
+{
 
-int print_sign(int n);
+if (n > 0)
 {
-if (n > '0')
-{
-return (1);
 _putchar('+');
+return (1);
 }
-
-else
+else if (n == 0)
 {
-if (n == '0')
-{
-return (0);
 _putchar('0');
+return (0);
 }
 
 else
 {
-return (-1);
 _putchar('-');
-
+return (-1);
 }
-
+return (0);
 }
-
-}
-
