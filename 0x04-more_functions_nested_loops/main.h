@@ -23,3 +23,5 @@ int add(int, int);
 void print_to_98(int n);
 
 int _isupper(int c);
+
+int _isdigit(int c);
