@@ -12,17 +12,16 @@ for (x = 0; str[x] != '\0'; x++)
 {
 }
 
-if ((x - 1) % 2 == 0)
+if (x % 2 == 0)
 {
-
-for ((y = (x - 1) / 2); str[y] != '\0'; y++)
+for (y = x / 2; str[y] != '\0'; y++)
 {
 _putchar(str[y]);
 }
 }
 else
 {
-for ((y = (x - 2) / 2); str[y] != '\0'; y++)
+for ((y = (x - 1) / 2); str[y] != '\0'; y++)
 {
 _putchar(str[y]);
 }
