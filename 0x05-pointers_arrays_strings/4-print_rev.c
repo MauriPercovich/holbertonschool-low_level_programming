@@ -2,7 +2,7 @@
 #include <string.h>
 /**
  * print_rev - print backwards
- *
+ * @s: string
  * Return: always 0
 **/
 void print_rev(char *s)
