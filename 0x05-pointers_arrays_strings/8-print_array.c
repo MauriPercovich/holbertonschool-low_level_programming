@@ -3,6 +3,7 @@
 /**
  * print_array - prints array from n
  * @n: number of elements of the array to be printed
+ * @a: string
  * Return: always 0
 **/
 void print_array(int *a, int n)
