@@ -1,19 +1,16 @@
 #include "main.h"
-#include <string.h>
 /**
- * print_rev - print backwards
- * @s: string
- * Return: always 0
+* print_rev - prints a string
+* @s: string to print
+* Return: always 0
 **/
 void print_rev(char *s)
 {
+int x, y;
 
+for (x = 0; s[x] != '\0'; x++)
 
-int x;
-
-for (x = strlen(s) - 1; x >= 0; x--)
-{
-	_putchar(s[x]);
-}
-	_putchar('\n');
+for (y = x; y >= 0; y--)
+_putchar(s[y]);
+_putchar('\n');
 }
