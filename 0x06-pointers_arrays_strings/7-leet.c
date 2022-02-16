@@ -12,7 +12,7 @@ int a, b;
 
 	for (a = 0; z[a] != '\0'; a++)
 	{
-	for (b = 0; b < 9; b++)
+	for (b = 0; b <= 9; b++)
 	{
 		if (z[a] == y[b])
 			z[a] = x[b];
