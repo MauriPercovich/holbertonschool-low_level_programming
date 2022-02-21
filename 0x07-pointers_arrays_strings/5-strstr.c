@@ -11,21 +11,19 @@ int y;
 
 for (; *haystack != '\0'; haystack++)
 {
-for (y = 0; needle[y] != '\0'; y++)
+	for (y = 0; needle[y] != '\0'; y++)
+	{
+		if (*haystack == needle[y])
+		{
+			return (haystack[y]);
+		}
+	}
+if (*haystack == needle[y])
 {
-if (*haystack == *needle)
-{
-return (haystack);
-}
-}
-if (*haystack == *needle)
-{
-return (haystack);
+	return (haystack[y]);
 }
 }
 return ('\0');
-
-
 
 
 }
