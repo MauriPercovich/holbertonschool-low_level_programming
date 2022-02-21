@@ -13,15 +13,16 @@ int y;
 	for (; *s != '\0'; s++)
 	{
 		for (y = 0; accept[y] != '\0'; y++)
-
+		{
 		if (*s == accept[y])
 		{
 			return (s);
 		}
-	}
+	}	
 	if (*s == *accept)
 	{
 		return (s);
 	}
-return (0);
+	}
+return ('\0');
 }
