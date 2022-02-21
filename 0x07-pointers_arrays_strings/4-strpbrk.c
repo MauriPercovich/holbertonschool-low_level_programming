@@ -18,7 +18,7 @@ int y;
 		{
 			return (s);
 		}
-	}	
+	}
 	if (*s == *accept)
 	{
 		return (s);
