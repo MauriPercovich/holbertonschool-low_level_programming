@@ -19,7 +19,7 @@ int y;
 			return (s);
 		}
 	}
-	if (*s == *accept)
+	if (*s == accept[y])
 	{
 		return (s);
 	}
