@@ -8,34 +8,21 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int x = 0, y = 0;
-unsigned int z;
+int z = 0;
 
-while (s[x] != '\0')
+while (s[x] != ' ')
 {
-
-	for (z = 0; accept[z] != '\0'; z++)
+	for (y = 0; accept[y] != '\0'; y++)
 	{
-	}
-
-	while (y <= z)
-	{
-		if (accept[y] == s[x])
+		if (s[x] == accept[y])
 		{
-			x++;
-			break;
-		}
-		else
-		{
-			y++;
+		z++;
+		break;
 		}
 	}
-
-
-if (y == z)
-{
-break;
+	x++;
 }
 
-}
-return (x);
+return (z);
+
 }
