@@ -6,14 +6,22 @@
 **/
 int _sqrt_recursion(int n)
 {
+int y, z;
+
 if (n < 0)
 	{
-	return (0);
+	return (-1);
 	}
-else if (n < 2)
+else if (n == 1)
 {
 	return (n);
 }
+
+else if (n == 0)
+{
+	        return (0);
+}
+
 else
 {
 	y = _sqrt_recursion(n >> 2) << 1;
@@ -29,4 +37,5 @@ else
 			return (z);
 		}
 }
+return (0);
 }
