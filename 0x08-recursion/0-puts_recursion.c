@@ -6,19 +6,15 @@
 **/
 void _puts_recursion(char *s)
 {
-int x;
 
-_putchar(s[x]);
-x++;
-if (s[x] != '\0') 
+_putchar(*s);
+s++;
+if (*s != '\0') 
 {
-_putchar(s[x]);
+_puts_recursion(s);
 }
-
-
-int main(void)
+else
 {
-_putchar(s[x]);
-return (0);
-
+_putchar('\n');
+}
 }
