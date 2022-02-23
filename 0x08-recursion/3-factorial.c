@@ -2,7 +2,7 @@
 /**
  * factorial - factorial
  * @n: number
- * return: always o
+ * Return: always o
 **/
 int factorial(int n)
 {
