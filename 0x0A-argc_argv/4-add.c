@@ -1,20 +1,29 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 /**
- *main - print
- *@argv: other
- *@argc: number
- *Return: always 0
-**/
-int main(int argc , char *argv[])
+ * main - prints its name, followed by a new line.
+ * @argc: argc
+ * @argv: argv
+ *
+ * Return: 0
+ */
+int main(int argc, char *argv[])
 {
-int i , sum=0;
+	int x, y, suma = 0;
 
-	for (i = 1; i < argc; i++)
+	for (x = 1; x < argc; x++)
 	{
-		sum += atoi(argv[i]);
+	for (y = 0; argv[x][y] != '\0'; y++)
+	{
+		if (!isdigit(argv[x][y]))
+		{
+			printf("Error\n");
+			return (1);
+		}
 	}
-	printf("%d\n" , sum);
-
-	return 0;
+	suma += atoi(argv[x]);
+	}
+	printf("%d\n", suma);
+	return (0);
 }
