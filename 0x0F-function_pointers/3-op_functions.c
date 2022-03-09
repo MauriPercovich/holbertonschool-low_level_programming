@@ -1,48 +1,52 @@
 #include "3-calc.h"
 /**
- *@a: int
- *@b: int
- *@op_add: add
+ * op_add - add
+ *@a: a
+ *@b: b
  *Return: always 0
 **/
 int op_add(int a, int b)
 {
 return (a + b);
 }
+
 /**
- *@a: int
+ * op_sub - sub
  *@b: int
- *@op_sub: sub
+ *@a: a
  *Return: always 0
  **/
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
+
 /**
- *@a: int
+ * op_mul - mul
  *@b: int
- *@op_mul: mul
+ *@a: a
  *Return: always 0
  **/
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
+
 /**
- *@a: int
+ * op_div - div
  *@b: int
- *@op_div: div
+ *@a: a
  *Return: always 0
  **/
 int op_div(int a, int b)
 {
 	return (a / b);
 }
+
 /**
- *@a: int
+ * op_mod - mod
  *@b: int
- *@op_mod: mod
+ *@a: a
  *Return: always 0
  **/
 int op_mod(int a, int b)
