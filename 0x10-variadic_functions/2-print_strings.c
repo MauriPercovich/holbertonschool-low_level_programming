@@ -16,7 +16,7 @@ va_start(x, n);
 
 for (i = 0; i < n; i++)
 {
-	str = (va_arg(x, *char));
+	str = (va_arg(x, char*));
 	if (str != NULL)
 	{
 		printf("%s", str);
