@@ -52,9 +52,8 @@ printf("%f", va_arg(f, double));
 
 /**
  * print_all - prints anything
- * @format: list of argument types passed to the function
+ * @format: list
  *
- * Return: void
  */
 void print_all(const char * const format, ...)
 {
