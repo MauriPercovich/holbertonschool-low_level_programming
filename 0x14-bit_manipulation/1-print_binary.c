@@ -4,7 +4,7 @@
  * print_binary - returns in binary
  * @n: number
 **/
-print_binary(unsigned long int n)
+void print_binary(unsigned long int n)
 {
 	if (n > 1)
 	{
