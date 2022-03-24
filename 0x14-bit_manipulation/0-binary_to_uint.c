@@ -1,49 +1,30 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * print_binary - print an integer in binary
- * @num: number to print
- * Return: length
+ * binary_to_uint - function
+ * @b: number to print
+ * Return: number in uint
  */
 
-int print_binary(va_list num)
+unsigned int binary_to_uint(const char *b)
 {
-	unsigned int i, aux, m, n = 0;
-	char *str;
+	unsigned int result = 0;
+	int x;
+	int base;
 
-	i = va_arg(num, int);
-	m = i;
+	if (b == NULL)
+		return (0);
 
-	if (i == 0)
+	for (x = 0; b[x] != '\0'; x++)
 	{
-		_putchar('0');
-		return (1);
+		if (b[x] != '0' && b[x] != '1')
+			return (0);
 	}
-
-	while (i > 0)
+	x--;
+	for (base = 1; x >= 0; x--, base *= 2)
 	{
-		i /= 2;
-		aux++;
+		result += ((b[x] - '0') * base);
 	}
-
-	str = malloc(aux * sizeof(int) + 1);
-
-	if (str == NULL)
-	{
-		return (-1);
-	}
-
-	while (m > 0)
-	{
-		str[n] = (m % 2) + '0';
-		m /= 2;
-		n++;
-	}
-	while (n != 0)
-	{
-		n--;
-		_putchar(str[n]);
-	}
-	free(str);
-return (aux);
+	return (result);
 }
